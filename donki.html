@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link id="pagestyle" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-cyan.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0-599x599.png"/>
+    <title>NasaHub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .nasalogo {
+            -webkit-filter: drop-shadow(5px 5px 5px black);
+            filter: drop-shadow(0px 0px 5px gold);
+            color: white;
+        }
+
+        #select{
+            -webkit-filter: drop-shadow(5px 5px 5px black);
+            filter: drop-shadow(0px 0px 5px gold);
+        }
+
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+            color: white;
+        }
+
+        #infos{
+            background: url('https://www.pngkey.com/png/full/263-2637085_nasa-nasa-space-ship-space-galaxy-tumblr-galaxia.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-y: -50px;
+        }
+
+        .mdl-navigation__link:hover{
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <audio src="videos/Menu Change SOUND Effect.mp3" id="sound"></audio>
+        <video autoplay muted loop id="myVideo">
+            <source src="videos/NASA   Magnificent Eruption in Full HD[1].mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"
+                style="width: 100%; justify-content: center; align-items: center; text-align: center;  margin-top: 5%;"><img
+                    src="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0-599x599.png"
+                    style="width: 10%;" class="nasalogo"><b class="nasalogo">NasaHub</b></span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation"
+                    style="display: flex; flex-direction: column; margin-top: 17.5%; transform: translateX(-160px);" id="select">
+                    <a class="mdl-navigation__link" href="techport.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">TechPort</a>
+                    <a class="mdl-navigation__link" href="index.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">APOD</a>
+                    <a class="mdl-navigation__link" href="asteroid.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">Asteroid - NeoWs</a>
+                    <a class="mdl-navigation__link" href="donki.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">DONKI</a>
+                    <a class="mdl-navigation__link" href="earth.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">EARTH</a>
+                    <a class="mdl-navigation__link" href="epic.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">EPIC</a>
+                    <a class="mdl-navigation__link" href="mars.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">Mars Rover Photos</a>
+                    <a class="mdl-navigation__link" href="vpgallery.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">NASA Photo Gallery</a>
+                    <a class="mdl-navigation__link" href="videogallery.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">NASA Video Gallery</a>
+                    <a class="mdl-navigation__link" href="techtransfer.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">TechTransfer</a>
+                    <a class="mdl-navigation__link" href="techtransfer1.html" onmouseover="PlaySound('sound')" onmouseout="StopSound('sound')">TechTransfer Infos</a>
+                </nav>
+            </div>
+        </header>
+        <div id="infos"
+            style="z-index: 1000; width:70%; text-align: center; margin: auto; justify-content: center; padding: 10px; background-color: rgba(255, 255, 255, 0.750); box-shadow: 0px 2px 6px black; color: black; border-radius: 2px; margin-top: 50px;">
+            <form>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input input1" type="date" id="input">
+                    <label class="mdl-textfield__label" for="input">Start Date</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input input2" type="date" id="input">
+                    <label class="mdl-textfield__label" for="input">End Date</label>
+                </div>
+            </form>
+            <button onclick="searchDONKI()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                Search
+            </button>
+            <div class="content"
+                style="margin-top: 10px; text-align: center; justify-content: center; visibility: hidden;">
+               
+            </div>
+        </div>
+    </div>
+    <script src="donki.js"></script>
+</body>
+
+</html>
