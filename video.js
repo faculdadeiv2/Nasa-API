@@ -8,15 +8,13 @@ function searchVideo() {
 
             for (let i = 0; i < json.collection.items.length; i++) {
                 var div = document.createElement('div')
-                div.setAttribute('class', 'demo-card-wide mdl-card mdl-shadow--2dp')
-                div.style.width = '100%'
-                div.style.display = 'flex'
-                div.style.flexWrap = 'wrap'
-                div.style.margin - '10px'
-                div.style.marginBottom = '10px'
-                div.style.marginTop = '10px'
-                div.style.textAlign = 'justify'
+                div.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'
+                div.style.color = 'white'
+                div.style.boxShadow = '0px 2px 6px black'
+                div.style.textAlign = 'center'
                 div.style.padding = '10px'
+                div.style.marginTop = '50px'
+                div.style.width = '100%'
 
                 
                 var title = document.createElement('div')
@@ -31,6 +29,7 @@ function searchVideo() {
                 var video = document.createElement('video')
                 video.setAttribute('controls', true)
                 video.setAttribute('type', 'video/mp4')
+                video.style.width = '100%'
                 video.src = `http://images-assets.nasa.gov/video/${json.collection.items[i].data[0].nasa_id}/${json.collection.items[i].data[0].nasa_id}~small.mp4`
                 video.onerror = function (){
                     this.src = 'https://youtu.be/DmwaUBY53YQ'

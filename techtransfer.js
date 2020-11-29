@@ -6,18 +6,12 @@ function searchTech() {
             console.log(json);
             for (let i = 0; i < json.results.length; i++) {
                 var div = document.createElement('div')
-                div.setAttribute('class', 'demo-card-wide mdl-card mdl-shadow--2dp')
-                div.style.padding = '15px'
-                div.style.boxShadow = '0px 2px 6px black'
                 div.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'
                 div.style.color = 'white'
-                div.style.width = '100%'
-                div.style.display = 'flex'
-                div.style.flexWrap = 'wrap'
-                div.style.margin - '10px'
-                div.style.marginBottom = '10px'
-                div.style.marginTop = '10px'
+                div.style.boxShadow = '0px 2px 6px black'
+                div.style.textAlign = 'center'
                 div.style.padding = '10px'
+                div.style.marginTop = '20px'
 
                 var project = document.createElement('div')
                 project.innerHTML = `<strong>Project Name: </strong>` + json.results[i][1]

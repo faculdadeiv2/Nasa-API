@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    color: white;
+}
+
+.nasalogo {
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(0px 0px 5px gold);
+    color: white;
+}
+
+#select{
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(0px 0px 5px gold);
+}
+
+#infos{
+    background: url('https://www.pngkey.com/png/full/263-2637085_nasa-nasa-space-ship-space-galaxy-tumblr-galaxia.png');
+    background-size: 100px;
+    background-position: center center;
+    background-repeat: repeat;
+    z-index: 1000; 
+    width:70%; 
+    text-align: center; 
+    margin: auto; 
+    justify-content: center; 
+    padding: 10px; 
+    background-color: rgba(255, 255, 255, 0.750); 
+    box-shadow: 0px 2px 6px black; 
+    color: black; 
+    border-radius: 2px; 
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
+.mdl-navigation__link:hover{
+    color: gold;
+}
+
+.mdl-textfield__input{
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}
+
+.mdl-textfield__label{
+    color: white;
+}
+
+.mdl-button{
+    background-color:rgba(0,0,0, 0.75);
+    color: white;
+}
+
+#selec{
+    color: black; 
+    width: 50%; 
+    margin-left: 25%; 
+    color: white;
+    background-color:rgba(0,0,0,0.75)
+}

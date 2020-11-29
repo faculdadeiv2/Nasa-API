@@ -1,0 +1,83 @@
+[debug] [2020-11-29T23:07:06.366Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T23:07:06.368Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\otavio.barros\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-29T23:07:06.368Z] CLI Version:   8.16.2
+[debug] [2020-11-29T23:07:06.368Z] Platform:      win32
+[debug] [2020-11-29T23:07:06.368Z] Node Version:  v14.15.1
+[debug] [2020-11-29T23:07:06.369Z] Time:          Sun Nov 29 2020 20:07:06 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2020-11-29T23:07:06.369Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T23:07:06.369Z] 
+[debug] [2020-11-29T23:07:06.371Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2020-11-29T23:07:06.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-29T23:07:06.390Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\otavio.barros\Desktop\faculdadeiv2\videos\API NASA
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2020-11-29T23:07:08.315Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2020-11-29T23:07:08.315Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using nasaapicons. 
+[debug] [2020-11-29T23:07:12.318Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-29T23:07:12.318Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-29T23:07:12.641Z] <<< HTTP RESPONSE 200 {"date":"Sun, 29 Nov 2020 23:07:19 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-29T23:07:12.647Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nasaapicons  
+ 
+[debug] [2020-11-29T23:07:13.759Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Nov 2020 23:07:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-11-29T23:07:36.258Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T23:07:36.259Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\otavio.barros\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-29T23:07:36.260Z] CLI Version:   8.16.2
+[debug] [2020-11-29T23:07:36.260Z] Platform:      win32
+[debug] [2020-11-29T23:07:36.260Z] Node Version:  v14.15.1
+[debug] [2020-11-29T23:07:36.261Z] Time:          Sun Nov 29 2020 20:07:36 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2020-11-29T23:07:36.261Z] ----------------------------------------------------------------------
+[debug] [2020-11-29T23:07:36.261Z] 
+[debug] [2020-11-29T23:07:36.268Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-29T23:07:36.268Z] > authorizing via signed-in user
+[debug] [2020-11-29T23:07:36.268Z] [iam] checking project nasaapicons for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-29T23:07:36.271Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/nasaapicons:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-29T23:07:37.213Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Nov 2020 23:07:44 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=734","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-29T23:07:37.215Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nasaapicons  
+ 
+[debug] [2020-11-29T23:07:38.237Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Nov 2020 23:07:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'nasaapicons'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-11-29T23:07:38.242Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/nasaapicons/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-11-29T23:07:39.766Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Nov 2020 23:07:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[nasaapicons]: beginning deploy... 
+[info] i  hosting[nasaapicons]: found 95 files in public 
+[debug] [2020-11-29T23:08:07.044Z] [hosting] hash cache [cHVibGlj] stored for 95 files
+[debug] [2020-11-29T23:08:07.044Z] [hosting][hash queue][FINAL] {"max":27193,"min":0,"avg":1044.0736842105264,"active":0,"complete":95,"success":95,"errored":0,"retried":0,"total":95,"elapsed":27229}
+[debug] [2020-11-29T23:08:07.045Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/nasaapicons/versions/37793c9085ce21fe:populateFiles  
+ <request body omitted>
+[debug] [2020-11-29T23:08:08.386Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 29 Nov 2020 23:08:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-29T23:08:08.408Z] [hosting][populate queue][FINAL] {"max":1350,"min":1350,"avg":1350,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1368}
+[debug] [2020-11-29T23:08:08.408Z] [hosting] uploads queued: 79
